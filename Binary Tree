@@ -1,8 +1,17 @@
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+
 public class treefill {
         
-    public static void main(String[] args) {
-    	//Node being the assumed name of the class
+    public static void main(String[] args) throws IOExeception {
+    	
+	//Node being the assumed name of the class
         Node bt = new Node(arr[0]);
+	
+	BufferedReader br = new BufferedReader(new FileReader("prog3.txt"));
+	
         for(int i = 1;i<arr.length;i++){
         	bt.insert(arr[i]);
         }
